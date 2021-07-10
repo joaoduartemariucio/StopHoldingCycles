@@ -6,13 +6,31 @@
 //
 
 import UIKit
+import LifetimeTracker
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+  
+  var window: UIWindow?
+  
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    window = UIWindow(frame: UIScreen.main.bounds)
+    let controller = RootViewController()
+    let nav = UINavigationController(rootViewController: controller)
+    window?.rootViewController = nav
+    window?.makeKeyAndVisible()
+    
+    #if DEBUG
+    LifetimeTracker.setup(
+      onUpdate: LifetimeTrackerDashboardIntegration(
+        visibility: .visibleWithIssuesDetected,
+        style: .circular)
+        .refreshUI
+    )
+    #endif
+    
     return true
   }
 }
-

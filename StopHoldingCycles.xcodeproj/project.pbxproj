@@ -11,11 +11,18 @@
 		7908EB1E343566ADD92BDF3C /* Pods_StopHoldingCyclesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190CF06C6CD0DB6277DE6F46 /* Pods_StopHoldingCyclesTests.framework */; };
 		AEA6AB48C1F7BA61E485730B /* Pods_StopHoldingCycles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42606A9E5AD4D2804623A6AF /* Pods_StopHoldingCycles.framework */; };
 		C4178C84269A4847002CE043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178C83269A4847002CE043 /* AppDelegate.swift */; };
-		C4178C88269A4847002CE043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178C87269A4847002CE043 /* ViewController.swift */; };
 		C4178C8D269A4849002CE043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4178C8C269A4849002CE043 /* Assets.xcassets */; };
 		C4178C90269A4849002CE043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4178C8E269A4849002CE043 /* LaunchScreen.storyboard */; };
 		C4178C9B269A4849002CE043 /* StopHoldingCyclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178C9A269A4849002CE043 /* StopHoldingCyclesTests.swift */; };
 		C4178CA6269A4849002CE043 /* StopHoldingCyclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178CA5269A4849002CE043 /* StopHoldingCyclesUITests.swift */; };
+		C4178CC1269A4D28002CE043 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178CBE269A4D28002CE043 /* RedViewController.swift */; };
+		C4178CC2269A4D28002CE043 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178CBF269A4D28002CE043 /* RootViewController.swift */; };
+		C4178CC3269A4D28002CE043 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178CC0269A4D28002CE043 /* YellowViewController.swift */; };
+		C4178CC5269A4D66002CE043 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178CC4269A4D66002CE043 /* BaseViewController.swift */; };
+		C4658BE5269A4E97006233AE /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4658BE4269A4E97006233AE /* BaseViewModel.swift */; };
+		C4658BEB269A50A9006233AE /* RedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4658BEA269A50A9006233AE /* RedViewModel.swift */; };
+		C4658BED269A50D5006233AE /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4658BEC269A50D5006233AE /* RootViewModel.swift */; };
+		C4658BEF269A5124006233AE /* YellowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4658BEE269A5124006233AE /* YellowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +53,6 @@
 		7606186BA337FE67973BB87E /* Pods-StopHoldingCyclesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopHoldingCyclesTests.debug.xcconfig"; path = "Target Support Files/Pods-StopHoldingCyclesTests/Pods-StopHoldingCyclesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4178C80269A4847002CE043 /* StopHoldingCycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopHoldingCycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4178C83269A4847002CE043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4178C87269A4847002CE043 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4178C8C269A4849002CE043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4178C8F269A4849002CE043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4178C91269A4849002CE043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +64,14 @@
 		C4178CA7269A4849002CE043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4178CB8269A4AF7002CE043 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C4178CB9269A4AF7002CE043 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		C4178CBE269A4D28002CE043 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		C4178CBF269A4D28002CE043 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		C4178CC0269A4D28002CE043 /* YellowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		C4178CC4269A4D66002CE043 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C4658BE4269A4E97006233AE /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		C4658BEA269A50A9006233AE /* RedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewModel.swift; sourceTree = "<group>"; };
+		C4658BEC269A50D5006233AE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		C4658BEE269A5124006233AE /* YellowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewModel.swift; sourceTree = "<group>"; };
 		FE0671191344C174EE2D00F2 /* Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,9 +151,9 @@
 		C4178C82269A4847002CE043 /* StopHoldingCycles */ = {
 			isa = PBXGroup;
 			children = (
+				C4178CBC269A4CDC002CE043 /* Presentation */,
 				C4178CB3269A48B8002CE043 /* Git */,
 				C4178C83269A4847002CE043 /* AppDelegate.swift */,
-				C4178C87269A4847002CE043 /* ViewController.swift */,
 				C4178C8C269A4849002CE043 /* Assets.xcassets */,
 				C4178C8E269A4849002CE043 /* LaunchScreen.storyboard */,
 				C4178C91269A4849002CE043 /* Info.plist */,
@@ -174,6 +188,61 @@
 			path = Git;
 			sourceTree = "<group>";
 		};
+		C4178CBC269A4CDC002CE043 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C4658BE6269A4EAA006233AE /* Base */,
+				C4178CBD269A4CE5002CE043 /* Pages */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C4178CBD269A4CE5002CE043 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C4658BE7269A507C006233AE /* Red */,
+				C4658BE9269A5092006233AE /* Root */,
+				C4658BE8269A5085006233AE /* Yellow */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		C4658BE6269A4EAA006233AE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C4178CC4269A4D66002CE043 /* BaseViewController.swift */,
+				C4658BE4269A4E97006233AE /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C4658BE7269A507C006233AE /* Red */ = {
+			isa = PBXGroup;
+			children = (
+				C4178CBE269A4D28002CE043 /* RedViewController.swift */,
+				C4658BEA269A50A9006233AE /* RedViewModel.swift */,
+			);
+			path = Red;
+			sourceTree = "<group>";
+		};
+		C4658BE8269A5085006233AE /* Yellow */ = {
+			isa = PBXGroup;
+			children = (
+				C4178CC0269A4D28002CE043 /* YellowViewController.swift */,
+				C4658BEE269A5124006233AE /* YellowViewModel.swift */,
+			);
+			path = Yellow;
+			sourceTree = "<group>";
+		};
+		C4658BE9269A5092006233AE /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C4178CBF269A4D28002CE043 /* RootViewController.swift */,
+				C4658BEC269A50D5006233AE /* RootViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +255,7 @@
 				C4178C7D269A4847002CE043 /* Frameworks */,
 				C4178C7E269A4847002CE043 /* Resources */,
 				F132732E455F8F6C138BE7EC /* [CP] Embed Pods Frameworks */,
+				C4658BF0269A536E006233AE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -366,6 +436,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C4658BF0269A536E006233AE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		EC1F049595120DA780E76819 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,8 +516,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4178C88269A4847002CE043 /* ViewController.swift in Sources */,
+				C4178CC5269A4D66002CE043 /* BaseViewController.swift in Sources */,
+				C4178CC1269A4D28002CE043 /* RedViewController.swift in Sources */,
+				C4178CC2269A4D28002CE043 /* RootViewController.swift in Sources */,
 				C4178C84269A4847002CE043 /* AppDelegate.swift in Sources */,
+				C4658BEF269A5124006233AE /* YellowViewModel.swift in Sources */,
+				C4178CC3269A4D28002CE043 /* YellowViewController.swift in Sources */,
+				C4658BE5269A4E97006233AE /* BaseViewModel.swift in Sources */,
+				C4658BED269A50D5006233AE /* RootViewModel.swift in Sources */,
+				C4658BEB269A50A9006233AE /* RedViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -583,7 +677,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -600,9 +694,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				DEVELOPMENT_TEAM = 44V9FMY9WF;
 				INFOPLIST_FILE = StopHoldingCycles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,9 +715,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				DEVELOPMENT_TEAM = 44V9FMY9WF;
 				INFOPLIST_FILE = StopHoldingCycles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
