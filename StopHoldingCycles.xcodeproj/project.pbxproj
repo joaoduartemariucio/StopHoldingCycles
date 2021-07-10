@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57AD8A0126DECBAF1F6C8A57 /* Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0671191344C174EE2D00F2 /* Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework */; };
+		7908EB1E343566ADD92BDF3C /* Pods_StopHoldingCyclesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190CF06C6CD0DB6277DE6F46 /* Pods_StopHoldingCyclesTests.framework */; };
+		AEA6AB48C1F7BA61E485730B /* Pods_StopHoldingCycles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42606A9E5AD4D2804623A6AF /* Pods_StopHoldingCycles.framework */; };
+		C4178C84269A4847002CE043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178C83269A4847002CE043 /* AppDelegate.swift */; };
+		C4178C88269A4847002CE043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178C87269A4847002CE043 /* ViewController.swift */; };
+		C4178C8D269A4849002CE043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4178C8C269A4849002CE043 /* Assets.xcassets */; };
+		C4178C90269A4849002CE043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4178C8E269A4849002CE043 /* LaunchScreen.storyboard */; };
+		C4178C9B269A4849002CE043 /* StopHoldingCyclesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178C9A269A4849002CE043 /* StopHoldingCyclesTests.swift */; };
+		C4178CA6269A4849002CE043 /* StopHoldingCyclesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4178CA5269A4849002CE043 /* StopHoldingCyclesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4178C97269A4849002CE043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4178C78269A4847002CE043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4178C7F269A4847002CE043;
+			remoteInfo = StopHoldingCycles;
+		};
+		C4178CA2269A4849002CE043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4178C78269A4847002CE043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4178C7F269A4847002CE043;
+			remoteInfo = StopHoldingCycles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190CF06C6CD0DB6277DE6F46 /* Pods_StopHoldingCyclesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopHoldingCyclesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3201B8D61FDEE80C87B30868 /* Pods-StopHoldingCycles-StopHoldingCyclesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopHoldingCycles-StopHoldingCyclesUITests.release.xcconfig"; path = "Target Support Files/Pods-StopHoldingCycles-StopHoldingCyclesUITests/Pods-StopHoldingCycles-StopHoldingCyclesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		37EAF0065AB2C070E73DFAAF /* Pods-StopHoldingCycles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopHoldingCycles.release.xcconfig"; path = "Target Support Files/Pods-StopHoldingCycles/Pods-StopHoldingCycles.release.xcconfig"; sourceTree = "<group>"; };
+		3E0395FC0BCAF1D34B3B6822 /* Pods-StopHoldingCycles-StopHoldingCyclesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopHoldingCycles-StopHoldingCyclesUITests.debug.xcconfig"; path = "Target Support Files/Pods-StopHoldingCycles-StopHoldingCyclesUITests/Pods-StopHoldingCycles-StopHoldingCyclesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		42606A9E5AD4D2804623A6AF /* Pods_StopHoldingCycles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopHoldingCycles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6129767110408FDCA52F47BA /* Pods-StopHoldingCyclesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopHoldingCyclesTests.release.xcconfig"; path = "Target Support Files/Pods-StopHoldingCyclesTests/Pods-StopHoldingCyclesTests.release.xcconfig"; sourceTree = "<group>"; };
+		613EFECB86A268A1182EEE94 /* Pods-StopHoldingCycles.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopHoldingCycles.debug.xcconfig"; path = "Target Support Files/Pods-StopHoldingCycles/Pods-StopHoldingCycles.debug.xcconfig"; sourceTree = "<group>"; };
+		7606186BA337FE67973BB87E /* Pods-StopHoldingCyclesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopHoldingCyclesTests.debug.xcconfig"; path = "Target Support Files/Pods-StopHoldingCyclesTests/Pods-StopHoldingCyclesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4178C80269A4847002CE043 /* StopHoldingCycles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopHoldingCycles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4178C83269A4847002CE043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4178C87269A4847002CE043 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4178C8C269A4849002CE043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4178C8F269A4849002CE043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4178C91269A4849002CE043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4178C96269A4849002CE043 /* StopHoldingCyclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopHoldingCyclesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4178C9A269A4849002CE043 /* StopHoldingCyclesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopHoldingCyclesTests.swift; sourceTree = "<group>"; };
+		C4178C9C269A4849002CE043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4178CA1269A4849002CE043 /* StopHoldingCyclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopHoldingCyclesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4178CA5269A4849002CE043 /* StopHoldingCyclesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopHoldingCyclesUITests.swift; sourceTree = "<group>"; };
+		C4178CA7269A4849002CE043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4178CB8269A4AF7002CE043 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		C4178CB9269A4AF7002CE043 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		FE0671191344C174EE2D00F2 /* Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4178C7D269A4847002CE043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA6AB48C1F7BA61E485730B /* Pods_StopHoldingCycles.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4178C93269A4849002CE043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7908EB1E343566ADD92BDF3C /* Pods_StopHoldingCyclesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4178C9E269A4849002CE043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AD8A0126DECBAF1F6C8A57 /* Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		984FE24AF77316D1EA83DE71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42606A9E5AD4D2804623A6AF /* Pods_StopHoldingCycles.framework */,
+				FE0671191344C174EE2D00F2 /* Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework */,
+				190CF06C6CD0DB6277DE6F46 /* Pods_StopHoldingCyclesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B86262E5F640701DFB4B1F3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				613EFECB86A268A1182EEE94 /* Pods-StopHoldingCycles.debug.xcconfig */,
+				37EAF0065AB2C070E73DFAAF /* Pods-StopHoldingCycles.release.xcconfig */,
+				3E0395FC0BCAF1D34B3B6822 /* Pods-StopHoldingCycles-StopHoldingCyclesUITests.debug.xcconfig */,
+				3201B8D61FDEE80C87B30868 /* Pods-StopHoldingCycles-StopHoldingCyclesUITests.release.xcconfig */,
+				7606186BA337FE67973BB87E /* Pods-StopHoldingCyclesTests.debug.xcconfig */,
+				6129767110408FDCA52F47BA /* Pods-StopHoldingCyclesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4178C77269A4847002CE043 = {
+			isa = PBXGroup;
+			children = (
+				C4178C82269A4847002CE043 /* StopHoldingCycles */,
+				C4178C99269A4849002CE043 /* StopHoldingCyclesTests */,
+				C4178CA4269A4849002CE043 /* StopHoldingCyclesUITests */,
+				C4178C81269A4847002CE043 /* Products */,
+				B86262E5F640701DFB4B1F3B /* Pods */,
+				984FE24AF77316D1EA83DE71 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4178C81269A4847002CE043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4178C80269A4847002CE043 /* StopHoldingCycles.app */,
+				C4178C96269A4849002CE043 /* StopHoldingCyclesTests.xctest */,
+				C4178CA1269A4849002CE043 /* StopHoldingCyclesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4178C82269A4847002CE043 /* StopHoldingCycles */ = {
+			isa = PBXGroup;
+			children = (
+				C4178CB3269A48B8002CE043 /* Git */,
+				C4178C83269A4847002CE043 /* AppDelegate.swift */,
+				C4178C87269A4847002CE043 /* ViewController.swift */,
+				C4178C8C269A4849002CE043 /* Assets.xcassets */,
+				C4178C8E269A4849002CE043 /* LaunchScreen.storyboard */,
+				C4178C91269A4849002CE043 /* Info.plist */,
+			);
+			path = StopHoldingCycles;
+			sourceTree = "<group>";
+		};
+		C4178C99269A4849002CE043 /* StopHoldingCyclesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4178C9A269A4849002CE043 /* StopHoldingCyclesTests.swift */,
+				C4178C9C269A4849002CE043 /* Info.plist */,
+			);
+			path = StopHoldingCyclesTests;
+			sourceTree = "<group>";
+		};
+		C4178CA4269A4849002CE043 /* StopHoldingCyclesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4178CA5269A4849002CE043 /* StopHoldingCyclesUITests.swift */,
+				C4178CA7269A4849002CE043 /* Info.plist */,
+			);
+			path = StopHoldingCyclesUITests;
+			sourceTree = "<group>";
+		};
+		C4178CB3269A48B8002CE043 /* Git */ = {
+			isa = PBXGroup;
+			children = (
+				C4178CB9269A4AF7002CE043 /* LICENSE */,
+				C4178CB8269A4AF7002CE043 /* README.md */,
+			);
+			path = Git;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4178C7F269A4847002CE043 /* StopHoldingCycles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4178CAA269A4849002CE043 /* Build configuration list for PBXNativeTarget "StopHoldingCycles" */;
+			buildPhases = (
+				8591CB3A0BDFD3BDCC747717 /* [CP] Check Pods Manifest.lock */,
+				C4178C7C269A4847002CE043 /* Sources */,
+				C4178C7D269A4847002CE043 /* Frameworks */,
+				C4178C7E269A4847002CE043 /* Resources */,
+				F132732E455F8F6C138BE7EC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StopHoldingCycles;
+			productName = StopHoldingCycles;
+			productReference = C4178C80269A4847002CE043 /* StopHoldingCycles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4178C95269A4849002CE043 /* StopHoldingCyclesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4178CAD269A4849002CE043 /* Build configuration list for PBXNativeTarget "StopHoldingCyclesTests" */;
+			buildPhases = (
+				AC2103D8CF27A78D30A31388 /* [CP] Check Pods Manifest.lock */,
+				C4178C92269A4849002CE043 /* Sources */,
+				C4178C93269A4849002CE043 /* Frameworks */,
+				C4178C94269A4849002CE043 /* Resources */,
+				108CA00C3DA3D8067E924B13 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4178C98269A4849002CE043 /* PBXTargetDependency */,
+			);
+			name = StopHoldingCyclesTests;
+			productName = StopHoldingCyclesTests;
+			productReference = C4178C96269A4849002CE043 /* StopHoldingCyclesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4178CA0269A4849002CE043 /* StopHoldingCyclesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4178CB0269A4849002CE043 /* Build configuration list for PBXNativeTarget "StopHoldingCyclesUITests" */;
+			buildPhases = (
+				FA7244870FCCFB9B7F741E55 /* [CP] Check Pods Manifest.lock */,
+				C4178C9D269A4849002CE043 /* Sources */,
+				C4178C9E269A4849002CE043 /* Frameworks */,
+				C4178C9F269A4849002CE043 /* Resources */,
+				EC1F049595120DA780E76819 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4178CA3269A4849002CE043 /* PBXTargetDependency */,
+			);
+			name = StopHoldingCyclesUITests;
+			productName = StopHoldingCyclesUITests;
+			productReference = C4178CA1269A4849002CE043 /* StopHoldingCyclesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4178C78269A4847002CE043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C4178C7F269A4847002CE043 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C4178C95269A4849002CE043 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C4178C7F269A4847002CE043;
+					};
+					C4178CA0269A4849002CE043 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C4178C7F269A4847002CE043;
+					};
+				};
+			};
+			buildConfigurationList = C4178C7B269A4847002CE043 /* Build configuration list for PBXProject "StopHoldingCycles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4178C77269A4847002CE043;
+			productRefGroup = C4178C81269A4847002CE043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4178C7F269A4847002CE043 /* StopHoldingCycles */,
+				C4178C95269A4849002CE043 /* StopHoldingCyclesTests */,
+				C4178CA0269A4849002CE043 /* StopHoldingCyclesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4178C7E269A4847002CE043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4178C90269A4849002CE043 /* LaunchScreen.storyboard in Resources */,
+				C4178C8D269A4849002CE043 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4178C94269A4849002CE043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4178C9F269A4849002CE043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		108CA00C3DA3D8067E924B13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCyclesTests/Pods-StopHoldingCyclesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCyclesTests/Pods-StopHoldingCyclesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCyclesTests/Pods-StopHoldingCyclesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8591CB3A0BDFD3BDCC747717 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StopHoldingCycles-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2103D8CF27A78D30A31388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StopHoldingCyclesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC1F049595120DA780E76819 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCycles-StopHoldingCyclesUITests/Pods-StopHoldingCycles-StopHoldingCyclesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCycles-StopHoldingCyclesUITests/Pods-StopHoldingCycles-StopHoldingCyclesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCycles-StopHoldingCyclesUITests/Pods-StopHoldingCycles-StopHoldingCyclesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F132732E455F8F6C138BE7EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCycles/Pods-StopHoldingCycles-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCycles/Pods-StopHoldingCycles-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopHoldingCycles/Pods-StopHoldingCycles-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7244870FCCFB9B7F741E55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StopHoldingCycles-StopHoldingCyclesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4178C7C269A4847002CE043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4178C88269A4847002CE043 /* ViewController.swift in Sources */,
+				C4178C84269A4847002CE043 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4178C92269A4849002CE043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4178C9B269A4849002CE043 /* StopHoldingCyclesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4178C9D269A4849002CE043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4178CA6269A4849002CE043 /* StopHoldingCyclesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4178C98269A4849002CE043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4178C7F269A4847002CE043 /* StopHoldingCycles */;
+			targetProxy = C4178C97269A4849002CE043 /* PBXContainerItemProxy */;
+		};
+		C4178CA3269A4849002CE043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4178C7F269A4847002CE043 /* StopHoldingCycles */;
+			targetProxy = C4178CA2269A4849002CE043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4178C8E269A4849002CE043 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4178C8F269A4849002CE043 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4178CA8269A4849002CE043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4178CA9269A4849002CE043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4178CAB269A4849002CE043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613EFECB86A268A1182EEE94 /* Pods-StopHoldingCycles.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = StopHoldingCycles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joaoduartemariucio.stopholdingcycles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4178CAC269A4849002CE043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EAF0065AB2C070E73DFAAF /* Pods-StopHoldingCycles.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = StopHoldingCycles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joaoduartemariucio.stopholdingcycles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4178CAE269A4849002CE043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7606186BA337FE67973BB87E /* Pods-StopHoldingCyclesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = StopHoldingCyclesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joaoduartemariucio.StopHoldingCyclesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopHoldingCycles.app/StopHoldingCycles";
+			};
+			name = Debug;
+		};
+		C4178CAF269A4849002CE043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6129767110408FDCA52F47BA /* Pods-StopHoldingCyclesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = StopHoldingCyclesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joaoduartemariucio.StopHoldingCyclesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StopHoldingCycles.app/StopHoldingCycles";
+			};
+			name = Release;
+		};
+		C4178CB1269A4849002CE043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E0395FC0BCAF1D34B3B6822 /* Pods-StopHoldingCycles-StopHoldingCyclesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = StopHoldingCyclesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joaoduartemariucio.StopHoldingCyclesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StopHoldingCycles;
+			};
+			name = Debug;
+		};
+		C4178CB2269A4849002CE043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3201B8D61FDEE80C87B30868 /* Pods-StopHoldingCycles-StopHoldingCyclesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				INFOPLIST_FILE = StopHoldingCyclesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.joaoduartemariucio.StopHoldingCyclesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StopHoldingCycles;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4178C7B269A4847002CE043 /* Build configuration list for PBXProject "StopHoldingCycles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4178CA8269A4849002CE043 /* Debug */,
+				C4178CA9269A4849002CE043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4178CAA269A4849002CE043 /* Build configuration list for PBXNativeTarget "StopHoldingCycles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4178CAB269A4849002CE043 /* Debug */,
+				C4178CAC269A4849002CE043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4178CAD269A4849002CE043 /* Build configuration list for PBXNativeTarget "StopHoldingCyclesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4178CAE269A4849002CE043 /* Debug */,
+				C4178CAF269A4849002CE043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4178CB0269A4849002CE043 /* Build configuration list for PBXNativeTarget "StopHoldingCyclesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4178CB1269A4849002CE043 /* Debug */,
+				C4178CB2269A4849002CE043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4178C78269A4847002CE043 /* Project object */;
+}
