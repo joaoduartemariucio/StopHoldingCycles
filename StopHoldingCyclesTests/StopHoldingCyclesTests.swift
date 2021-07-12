@@ -8,26 +8,29 @@
 import XCTest
 @testable import StopHoldingCycles
 
-class StopHoldingCyclesTests: XCTestCase {
+final class ClientAndServerTrackTests: XCTestCase {
+  
+  func testClientNameCorrect() {
+    
+    let (client, _) = makeSUT()
+    
+    XCTAssertEqual(client.server.name, "ClientAndServerTrackTests")
+  }
+  
+  private func makeSUT(file: StaticString = #filePath, line: UInt = #line) -> (Client, Server) {
+    let server: Server = Server(name: "ClientAndServerTrackTests")
+    let client: Client = Client(server: server)
+    
+    trackForMemoryLeaks(server, file: file, line: line)
+    trackForMemoryLeaks(client, file: file, line: line)
+    return (client, server)
+  }
+}
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+extension XCTestCase {
+  func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString = #filePath, line: UInt = #line) {
+    addTeardownBlock { [weak instance] in
+      XCTAssertNil(instance, "Instance should have been deallocated. Potential memory leak!", file: file, line: line)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+  }
 }

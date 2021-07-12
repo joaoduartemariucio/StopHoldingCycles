@@ -23,6 +23,8 @@
 		C4658BEB269A50A9006233AE /* RedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4658BEA269A50A9006233AE /* RedViewModel.swift */; };
 		C4658BED269A50D5006233AE /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4658BEC269A50D5006233AE /* RootViewModel.swift */; };
 		C4658BEF269A5124006233AE /* YellowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4658BEE269A5124006233AE /* YellowViewModel.swift */; };
+		C4658BF4269C5F5B006233AE /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4658BF3269C5F5B006233AE /* Server.swift */; };
+		C4D8CCFA269C6DE8005C4D4B /* ClientAndServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D8CCF9269C6DE8005C4D4B /* ClientAndServerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		C4658BEA269A50A9006233AE /* RedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewModel.swift; sourceTree = "<group>"; };
 		C4658BEC269A50D5006233AE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		C4658BEE269A5124006233AE /* YellowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewModel.swift; sourceTree = "<group>"; };
+		C4658BF3269C5F5B006233AE /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		C4D8CCF9269C6DE8005C4D4B /* ClientAndServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAndServerTests.swift; sourceTree = "<group>"; };
 		FE0671191344C174EE2D00F2 /* Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopHoldingCycles_StopHoldingCyclesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +155,7 @@
 		C4178C82269A4847002CE043 /* StopHoldingCycles */ = {
 			isa = PBXGroup;
 			children = (
+				C4658BF1269C5F35006233AE /* Entities */,
 				C4178CBC269A4CDC002CE043 /* Presentation */,
 				C4178CB3269A48B8002CE043 /* Git */,
 				C4178C83269A4847002CE043 /* AppDelegate.swift */,
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				C4178C9A269A4849002CE043 /* StopHoldingCyclesTests.swift */,
+				C4D8CCF9269C6DE8005C4D4B /* ClientAndServerTests.swift */,
 				C4178C9C269A4849002CE043 /* Info.plist */,
 			);
 			path = StopHoldingCyclesTests;
@@ -241,6 +247,22 @@
 				C4658BEC269A50D5006233AE /* RootViewModel.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		C4658BF1269C5F35006233AE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C4658BF2269C5F47006233AE /* Server */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C4658BF2269C5F47006233AE /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				C4658BF3269C5F5B006233AE /* Server.swift */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4658BF4269C5F5B006233AE /* Server.swift in Sources */,
 				C4178CC5269A4D66002CE043 /* BaseViewController.swift in Sources */,
 				C4178CC1269A4D28002CE043 /* RedViewController.swift in Sources */,
 				C4178CC2269A4D28002CE043 /* RootViewController.swift in Sources */,
@@ -533,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4178C9B269A4849002CE043 /* StopHoldingCyclesTests.swift in Sources */,
+				C4D8CCFA269C6DE8005C4D4B /* ClientAndServerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,7 +760,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				DEVELOPMENT_TEAM = 44V9FMY9WF;
 				INFOPLIST_FILE = StopHoldingCyclesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -759,7 +783,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				DEVELOPMENT_TEAM = 44V9FMY9WF;
 				INFOPLIST_FILE = StopHoldingCyclesTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -781,7 +805,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				DEVELOPMENT_TEAM = 44V9FMY9WF;
 				INFOPLIST_FILE = StopHoldingCyclesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -802,7 +826,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 534P4F9R6Y;
+				DEVELOPMENT_TEAM = 44V9FMY9WF;
 				INFOPLIST_FILE = StopHoldingCyclesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

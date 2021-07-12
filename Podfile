@@ -10,7 +10,7 @@ target 'StopHoldingCycles' do
   pod 'LifetimeTracker'
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod "SwiftLint"
+  pod 'SwiftLint'
 
   target 'StopHoldingCyclesTests' do
     inherit! :search_paths

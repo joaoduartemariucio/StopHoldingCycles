@@ -9,18 +9,28 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+// MARK: - YellowViewController
 class YellowViewController: BaseViewController<YellowViewModel> {
+  // MARK: - Constants
+  struct Constants {
+    static let TitleView = "YellowViewController"
+    static let NextButtonTitle = "Go to root view"
+    static let ButtonHeightDefault: CGFloat = 50
+  }
   
-  let disposeBag = DisposeBag()
-  
-  var button: UIButton = {
+  // MARK: - Components
+  var nextViewButton: UIButton = {
     var btn = UIButton()
-    btn.setTitle("Go to root view", for: .normal)
+    btn.setTitle(Constants.NextButtonTitle, for: .normal)
     btn.setTitleColor(.black, for: .normal)
     btn.translatesAutoresizingMaskIntoConstraints = false
     return btn
   }()
   
+  // MARK: - Variables
+  let disposeBag = DisposeBag()
+  
+  // MARK: - Life cycle
   convenience init() {
     self.init(viewModel: YellowViewModel())
   }
@@ -28,33 +38,48 @@ class YellowViewController: BaseViewController<YellowViewModel> {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    title = "YellowViewController"
+    title = Constants.TitleView
     view.backgroundColor = .yellow
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    addLayout()
+    addLayoutConstraint()
+  }
+  
+  override func bindView() {
+    super.bindView()
     
-    view.addSubview(button)
-    NSLayoutConstraint.activate([
-      button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-      button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-    ])
-    
-    // Observe Notification: Application Did Become Active Notification
-    NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification,
-                                           object: nil,
-                                           queue: .main) { [unowned self] _ in
-      self.updateView()
-    }
-    
-    button.rx.tap
+    nextViewButton.rx.tap
       .observe(on: MainScheduler.instance)
       .subscribe(onNext: goToRootView)
       .disposed(by: disposeBag)
   }
   
-  func goToRootView() {
-    self.navigationController?.popToRootViewController(animated: true)
+  override class func description() -> String {
+    return Constants.TitleView
+  }
+}
+
+// MARK: - Layout
+extension YellowViewController {
+  func addLayout() {
+    view.addSubview(nextViewButton)
   }
   
-  override class func description() -> String {
-    return "YellowViewController"
+  func addLayoutConstraint() {
+    NSLayoutConstraint.activate([
+      nextViewButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+      nextViewButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      nextViewButton.heightAnchor.constraint(equalToConstant: Constants.ButtonHeightDefault)
+    ])
+  }
+}
+
+// MARK: - Functions
+private extension YellowViewController {
+  func goToRootView() {
+    self.navigationController?.popToRootViewController(animated: true)
   }
 }

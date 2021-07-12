@@ -15,7 +15,6 @@ The word retain comes from the Manual Reference Counting days in Objective-C. Be
 
 Swift provides two ways to resolve strong reference cycles when you work with properties of class type: weak references and unowned references.
 Weak and unowned references enable one instance in a reference cycle to refer to the other instance without keeping a strong hold on it. The instances can then refer to each other without creating a strong reference cycle.
-[Apple’s Swift Programming Language](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID48)
 
 ## Why is it important to be aware of cycle retention and memory leaks?
 
@@ -24,12 +23,14 @@ Why does the memory footprint grow? It is a direct consequence of objects not be
 
 ## Credits
 
-- [Leandro Pérez](https://medium.com/@leandromperez)
+- [Leandro Pérez](https://gist.github.com/leandromperez)
 - [Krzysztof Zabłocki](https://github.com/krzysztofzablocki)
-- [Jesús Alfredo Hernández Alarcón](https://alfredohdz.medium.com/)
+- [Jesús Alfredo Hernández Alarcón](https://github.com/AlfredoHernandez)
 
 ## References
 
 - [Memory Leaks in Swift](https://medium.com/flawless-app-stories/memory-leaks-in-swift-bfd5f95f3a74)
 - [Detecting memory leaks using Unit Tests in Swift](https://levelup.gitconnected.com/detecting-memory-leaks-using-unit-tests-in-swift-c37533e8ee4a)
-
+- [Project HackrNews](https://github.com/AlfredoHernandez/HackrNews)
+- [Lib LifetimeTracker](https://github.com/krzysztofzablocki/LifetimeTracker)
+- [Automatic Reference Counting](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID48)

@@ -22,6 +22,7 @@ class BaseViewController<VM>: UIViewController,
     self.viewModel = viewModel
     super.init(nibName: xibName, bundle: nil)
     trackLifetime()
+    bindView()
   }
   
   required init?(coder: NSCoder) {
@@ -32,5 +33,7 @@ class BaseViewController<VM>: UIViewController,
     debugPrint("DEINIT: \(self)")
   }
   
-  func updateView() { }
+  func bindView() {}
+  
+  func updateView() {}
 }
